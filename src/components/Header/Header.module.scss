@@ -1,0 +1,23 @@
+.Header {
+  background-color: #252525;
+  padding: 0 30px;
+}
+
+.HeaderInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+}
+
+.Burger {
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.35s;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

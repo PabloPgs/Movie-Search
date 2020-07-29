@@ -1,0 +1,80 @@
+.Film {
+  padding: 25px 0;
+}
+
+.FilmHeader {
+  max-width: 1000px;
+  width: 100%;
+
+  margin: 0 auto;
+  text-align: center;
+
+  h3 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #aaa;
+
+    margin: 10px 0;
+  }
+}
+
+.FilmBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 6px;
+
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+
+    span {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}
+
+.Modal {
+  position: absolute;
+  top: 75px;
+  right: 0;
+  padding-right: 30px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  svg {
+    color: #ff0000;
+    font-size: 18px;
+  }
+}
+
+.Loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Arrow {
+  position: absolute;
+  top: 75px;
+  left: 30px;
+
+  font-size: 20px;
+  color: #000;
+}

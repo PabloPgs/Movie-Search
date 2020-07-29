@@ -1,0 +1,58 @@
+.SideBar {
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 0;
+
+  max-width: 350px;
+  width: 100%;
+  height: calc(100vh - 50px);
+
+  background-color: #252525;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: all 0.45s ease-in-out;
+  a {
+    font-size: 30px;
+    color: #d4d4d4;
+    cursor: pointer;
+    margin: 20px 0;
+    text-decoration: none;
+    transition: all 0.45s;
+
+    &:hover {
+      opacity: 0.75;
+      text-decoration: underline;
+    }
+  }
+}
+
+a.Active {
+  opacity: 0.5;
+  text-decoration: underline !important;
+}
+
+.SideBar.Active {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 800px) {
+  .SideBar {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .SideBar {
+    width: 50%;
+
+    a {
+      font-size: 24px;
+      margin: 15px 0;
+    }
+  }
+}
